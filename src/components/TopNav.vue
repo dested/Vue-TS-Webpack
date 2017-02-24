@@ -11,7 +11,7 @@
   </nav>
 </template>
 
-<script lang="vue-ts">
+<script lang="ts">
   export default {
     name: 'top-nav',
     props: {

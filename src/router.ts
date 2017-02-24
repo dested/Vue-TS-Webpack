@@ -8,11 +8,7 @@ import Orders from './pages/Orders.vue';
 
 Vue.use(VueRouter);
 
-const routes = [/*{
- path: '/login',
- name: 'login',
- component: Login,
- },*/ {
+const routes = [ {
     path: '/',
     name: 'app',
     component: App,
@@ -26,7 +22,6 @@ const routes = [/*{
             name: 'orders',
             component: Orders,
         }, {
-            // all other routes, including /, get redirected to /customers
             path: '*',
             redirect: 'customers',
         },

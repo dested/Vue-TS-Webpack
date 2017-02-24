@@ -7,7 +7,7 @@
         </header>
         <div class="card-content">
             <div class="content">
-                <div>XX orders</div>
+                <div>XX efefs</div>
                 <div><a href="" target="_blank">{{ customer.email }}</a></div>
                 <small>{{ customer.city }}, {{ customer.state }}</small>
             </div>
@@ -29,22 +29,23 @@
     </div>
 </template>
 
-<script lang="vue-ts">
+<script lang="ts">
     import {
         Vue, Component, p, Prop
     } from 'av-ts'
+    import {ICustomer} from "../models/Customer";
     @Component({
         name: 'customer-card',
     })
-    export default class MyComponent extends Vue { // extends Vue or your own component
+    export default class extends Vue { // extends Vue or your own component
         // instance variable is in `data`
         @Prop customer: ICustomer = <ICustomer> p({
                     type: Object,
                     required: true,
                     validator(value) {
                         const props = [
-                            'firstname',
-                            'lastname',
+                            'firstName',
+                            'lastName',
                             'email',
                             'city',
                             'state',
@@ -56,17 +57,11 @@
         );
 
         get name() {
-            return `${this.customer.firstname} ${this.customer.lastname}`;
+            return `${this.customer.firstName} - ${this.customer.lastName}`;
         }
 
         doSomething() {
-            let customer = this.customer;
-            customer.state = 'shoes';
+            this.customer.state = 's2e1234adsfasdf23hoes';
         }
     };
-
-    interface ICustomer {
-        firstname: string;lastname: string;city: string;state: string;email: string;
-    }
-
 </script>

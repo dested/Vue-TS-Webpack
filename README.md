@@ -17,13 +17,17 @@ npm run build
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-# typescript support
+## Typescript Support
 
+```install typescript
+install vue-class-component
+install vue-ts-loader
+install av-ts
+install vue-router
+install ts-loader
+```
 
-add typescript as a webstorm language injector for script lang=vue-ts
-add vue-ts-loader
-add typescript
-add av-ts
-add ts-loader
+#Caveats
 
-https://github.com/HerringtonDarkholme/av-ts
+.vue files can only have one exported class
+

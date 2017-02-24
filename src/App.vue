@@ -36,7 +36,7 @@
     </div>
 </template>
 
-<script lang="vue-ts">
+<script lang="ts">
 
 
     import TopNav from './components/TopNav.vue';

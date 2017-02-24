@@ -4,10 +4,11 @@
     "target": "es5",
     "sourceMap": true,
     "experimentalDecorators": true,
-    "noEmitOnError": false
+    "noEmitOnError": false,
+    "types": ["vue-typescript-import-dts"]
   },
   "files": [
-    "./src/empty.ts"
+    "./src/main.ts"
   ],
   "exclude": [
     "node_modules"

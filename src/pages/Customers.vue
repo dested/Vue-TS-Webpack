@@ -4,7 +4,7 @@
             <header class="is-clearfix">
                 <div class="control is-grouped is-pulled-right">
                     <div class="control">
-                        <a class="button" :class="{ 'is-loading': loading }" @click="fetchCustomers()">
+                        <a class="button" :class="{ 'is-loading': loading }">
               <span class="icon is-small">
                 <i class="fa fa-refresh"></i>
               </span>
@@ -40,24 +40,25 @@
     </section>
 </template>
 
-<script lang="vue-ts">
+<script lang="ts">
     //  import { mapState, mapGetters } from 'vuex';
     import CustomerCard from '../components/CustomerCard.vue';
+    import {ICustomer} from "../models/Customer";
 
     export default {
         name: 'customers-page',
         components: {
-            CustomerCard,
+            CustomerCard: CustomerCard,
         },
         data() {
             return {
                 mode: 'cards',
                 loading: false,
-                customers: [
-                    {firstname: 'a', lastname: 'b', email: 'c', city: 'd', state: 'e'},
-                    {firstname: 'a', lastname: 'b', email: 'c', city: 'd', state: 'e'},
-                    {firstname: 'a', lastname: 'b', email: 'c', city: 'd', state: 'e'},
-                    {firstname: 'a', lastname: 'b', email: 'c', city: 'd', state: 'e'},
+                customers: <ICustomer[]>[
+                    {firstName: '2a', lastName: 'b', email: 'c', city: 'd', state: 'e'},
+                    {firstName: 'a', lastName: 'b', email: 'c', city: 'd', state: 'e'},
+                    {firstName: 'a', lastName: 'b', email: 'c', city: 'd', state: 'e'},
+                    {firstName: 'a', lastName: 'b', email: 'c', city: 'd', state: 'e'},
                 ]
             }
         },
