@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Vue = require("vue");
-var VueRouter = require("vue-router");
+var vue_router_1 = require("vue-router");
 var App_vue_1 = require("./App.vue");
 var Customers_vue_1 = require("./pages/Customers.vue");
 var Orders_vue_1 = require("./pages/Orders.vue");
-Vue.use(VueRouter);
+Vue.use(vue_router_1.default);
 var routes = [{
         path: '/',
         name: 'app',
@@ -25,7 +25,7 @@ var routes = [{
             },
         ],
     }];
-var router = new VueRouter({
+var router = new vue_router_1.default({
     mode: 'hash',
     routes: routes,
 });

@@ -12,9 +12,9 @@
     "av-ts": "^0.6.3",
     "ts-loader": "^2.0.1",
     "typescript": "^2.2.1",
-    "vue": "2.1.10",
+    "vue": "^2.2.0",
     "vue-class-component": "^4.4.0",
-    "vue-router": "^2.2.1",
+    "vue-router": "^2.2.0",
     "vue-ts-loader": "^0.0.3"
   },
   "devDependencies": {
@@ -25,7 +25,7 @@
     "css-loader": "^0.25.0",
     "file-loader": "^0.9.0",
     "vue-loader": "^10.0.0",
-    "vue-template-compiler": "^2.1.0",
+    "vue-template-compiler": "^2.2.0",
     "vue-typescript-import-dts": "^3.0.1",
     "webpack": "^2.2.0",
     "webpack-dev-server": "^2.2.0"
