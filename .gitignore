@@ -1,5 +1,15 @@
-.DS_Store
+// Project
 node_modules/
 dist/
 npm-debug.log
+
+// Compiled JS
+src/**/*.js
+src/**/*.js.map
+
+// IDE
+.vscode
 .idea
+
+// OS
+.DS_Store
